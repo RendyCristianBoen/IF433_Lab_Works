@@ -3,6 +3,7 @@ package oop_130679_RendyCristianBoen.week02
 class Student (
     val name: String,
     val nim: String,
+    var gpa: Double = 0.0,
     var major: String,
 ){
     init {
