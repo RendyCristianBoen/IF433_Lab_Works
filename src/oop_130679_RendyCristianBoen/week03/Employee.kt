@@ -2,6 +2,8 @@ package oop_130679_RendyCristianBoen.week03
 
 class Employee(val name: String) {
     private var performanceRating: Int = 3
+    val tax: Double
+        get() = salary * 0.1
 
     fun increasePerformance() {
         performanceRating++
@@ -11,6 +13,7 @@ class Employee(val name: String) {
     fun printStatus() {
         println("Karyawan: $name, Rating: $performanceRating")
     }
+
 
     var salary: Int = 0
         set(value) {
