@@ -1,6 +1,17 @@
 package oop_130679_RendyCristianBoen.week03
 
 class Employee(val name: String) {
+    private var performanceRating: Int = 3
+
+    fun increasePerformance() {
+        performanceRating++
+        println("Kinerja $name Meningkat Rating: $performanceRating")
+    }
+
+    fun printStatus() {
+        println("Karyawan: $name, Rating: $performanceRating")
+    }
+
     var salary: Int = 0
         set(value) {
             if (value > 0) {
