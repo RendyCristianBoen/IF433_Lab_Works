@@ -10,4 +10,9 @@ open class Car(brand: String, val numberOfDoors: Int) : Vehicle(brand) {
         println("TuT TuT anak INTROVET $brand lewat!")
     }
 
+    override fun accelerate() {
+        super.accelerate()
+        println("Gua $brand mengunakan Senyuman palsu baut majuuuu!")
+    }
+
 }
