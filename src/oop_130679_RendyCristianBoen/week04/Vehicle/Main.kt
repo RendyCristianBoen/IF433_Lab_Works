@@ -1,7 +1,7 @@
 package oop_130679_RendyCristianBoen.week04.Vehicle
 
 fun main(){
-    println("---Testing Vehicle ---")
+    println("--- Testing Vehicle ---")
     val generalVehicle = Vehicle("Anak Introvet")
     generalVehicle.honk()
     generalVehicle.accelerate()
@@ -11,4 +11,10 @@ fun main(){
     myCar.openTrunk()
     myCar.honk()
     myCar.accelerate()
+
+    println("\n--- Testing Electric Car ---")
+    val myElectricCar = ElectricCar("INTROVET LISTRIK", 4, 85)
+    myElectricCar.openTrunk()
+    myElectricCar.honk()
+    myElectricCar.accelerate()
 }
