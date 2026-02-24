@@ -17,4 +17,14 @@ fun main(){
     myElectricCar.openTrunk()
     myElectricCar.honk()
     myElectricCar.accelerate()
+
+    println("\n--- Testing Employee Hierarchy ---")
+    val manager = Manager("Bos Introvet", 10_000_000)
+    val developer = Developer("Coder Introvet", 8_000_000, "Kotlin")
+
+    manager.work()
+    println("Bonus Manager: Rp ${manager.calculateBonus()}")
+
+    developer.work()
+    println("Bonus Developer: Rp ${developer.calculateBonus()}")
 }
