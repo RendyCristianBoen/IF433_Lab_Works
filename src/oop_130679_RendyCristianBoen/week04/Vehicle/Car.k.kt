@@ -12,7 +12,7 @@ open class Car(brand: String, val numberOfDoors: Int) : Vehicle(brand) {
 
     override fun accelerate() {
         super.accelerate()
-        println("Gua $brand mengunakan Senyuman palsu baut majuuuu!")
+        println("Gua $brand mengunakan Senyuman palsu buat majuuuu!")
     }
 
 }
