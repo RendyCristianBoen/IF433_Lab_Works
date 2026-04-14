@@ -11,4 +11,9 @@ fun main() {
     }
 
     val mixedList: List<Any> = listOf("Hello", 123, "World", true)
+
+    for (item in mixedList) {
+        val str = item as? String
+        println("String: $str")
+    }
 }
