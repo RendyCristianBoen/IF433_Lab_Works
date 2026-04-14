@@ -10,4 +10,5 @@ fun main() {
         println("City with let: $it")
     }
 
+    val mixedList: List<Any> = listOf("Hello", 123, "World", true)
 }
