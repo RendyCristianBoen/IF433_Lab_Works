@@ -16,4 +16,12 @@ fun main() {
         val str = item as? String
         println("String: $str")
     }
+
+    try {
+        val text: String? = null
+        println(text!!.length)
+    } catch (e: Exception) {
+        println("Crash: ${e.message}")
+    }
+
 }
