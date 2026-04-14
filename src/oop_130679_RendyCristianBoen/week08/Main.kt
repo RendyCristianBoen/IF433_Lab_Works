@@ -27,4 +27,12 @@ fun main() {
     } catch (e: Exception) {
         println("Crash: ${e.message}")
     }
+
+    try {
+        val name: String? = null
+        val result = requireNotNull(name) { "Name wajib ada!" }
+        println(result)
+    } catch (e: Exception) {
+        println(e.message)
+    }
 }
