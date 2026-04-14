@@ -1,5 +1,7 @@
 package oop_130679_RendyCristianBoen.week08
 
+class ApiParser {
+
     fun parseProduct(rawJson: Map<String, Any?>): Product? {
 
         val id = requireNotNull(rawJson["id"] as? String) {
