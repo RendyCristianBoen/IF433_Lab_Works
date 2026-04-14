@@ -38,4 +38,10 @@ fun main() {
 
     val data = LegacyJavaAPI.getData()!!
     println("Java Data: $data")
+
+    try {
+        runMockUnitTest()
+    } catch (e: Exception) {
+        println("Unit Test Failed: ${e.message}")
+    }
 }
