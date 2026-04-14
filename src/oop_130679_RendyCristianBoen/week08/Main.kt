@@ -17,11 +17,8 @@ fun main() {
         println("String: $str")
     }
 
-    try {
-        val text: String? = null
-        println(text!!.length)
-    } catch (e: Exception) {
-        println("Crash: ${e.message}")
-    }
+    val value: Any = "Not Int"
+    val number = value as? Int ?: 0
+    println("Number: $number")
 
 }
