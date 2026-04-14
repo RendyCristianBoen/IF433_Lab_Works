@@ -35,4 +35,7 @@ fun main() {
     } catch (e: Exception) {
         println(e.message)
     }
+
+    val data = LegacyJavaAPI.getData()!!
+    println("Java Data: $data")
 }
