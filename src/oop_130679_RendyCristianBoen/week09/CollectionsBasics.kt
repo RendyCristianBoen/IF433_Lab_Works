@@ -12,11 +12,24 @@ fun main() {
     println("Mutable List: $mutableList")
 
     println("\n=== TEST SET ===")
-    val uniqueNumbers = setOf(1, 2, 2, 3, 3, 4) [cite: 31]
+    val uniqueNumbers = setOf(1, 2, 2, 3, 3, 4)
     println("Unique Numbers (Set): $uniqueNumbers")
 
-    val activeUsers = mutableSetOf("UserA", "UserB") [cite: 33]
-    activeUsers.add("UserC") [cite: 34]
+    val activeUsers = mutableSetOf("UserA", "UserB")
+    activeUsers.add("UserC")
     activeUsers.add("UserA")
-    println("Active Users: $activeUsers") [cite: 35]
+    println("Active Users: $activeUsers")
+
+    println("\n=== TEST MAP ===")
+    val studentGrades = mapOf(
+        "Alice" to "A",
+        "Bob" to "B",
+        "Charlie" to "A"
+    )
+    println("Nilai Bob: ${studentGrades["Bob"]}")
+
+    val inventory = mutableMapOf("Apples" to 50, "Bananas" to 30)
+    inventory["Oranges"] = 20
+    inventory["Apples"] = 45
+    println("Inventory: $inventory")
 }
