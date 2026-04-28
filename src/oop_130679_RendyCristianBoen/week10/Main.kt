@@ -1,6 +1,6 @@
 package oop_130679_RendyCristianBoen.week10
 
-fun main() {
+fun main(getMax: (Int, Int) -> Unit) {
     println("=== TEST GENERIC CLASS ===")
     val intBox = Box(100)
     val stringBox = Box("Generics in Kotlin")
