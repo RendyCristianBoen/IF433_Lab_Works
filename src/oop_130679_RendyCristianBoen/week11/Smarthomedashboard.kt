@@ -24,6 +24,7 @@ fun main() {
     }
     homeDevices.add(acUnit)
 
+    homeDevices.add(SmartDevice("Picolo's Auto Feeder", "Pet Care", true, 10))
 
 
 }
