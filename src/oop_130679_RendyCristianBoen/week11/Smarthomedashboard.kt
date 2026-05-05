@@ -31,4 +31,10 @@ fun main() {
         println(it.diagnose())
     }
 
+    with(homeDevices) {
+        println("\n=== SMART HOME DASHBOARD ===")
+        println("Total Perangkat Terdaftar: ${this.size}")
+    }
+
+
 }
