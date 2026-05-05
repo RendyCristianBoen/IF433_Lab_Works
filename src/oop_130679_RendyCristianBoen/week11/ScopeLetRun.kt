@@ -1,9 +1,20 @@
 package oop_130679_RendyCristianBoen.week11
 
 fun main() {
-    val name: String? = "Rendy"
+    println("=== TEST LET FUNCTION ===")
+    val name: String? = "Alexander"
 
-    name?.let {
-        println("Length: ${it.length}")
+    // Mengeksekusi blok hanya jika objek tidak null
+    val length = name?.let {
+        println("Nama terdeteksi: $it") // 'it' merujuk pada name
+        it.length // Mengembalikan nilai expression terakhir
     }
+    println("Panjang nama: $length")
+
+    println("\n=== TEST RUN FUNCTION ===")
+    val result = "Kotlin".run {
+        println("Memproses kata: ${this}") // 'this' bisa dihilangkan (implicit)
+        length * 2
+    }
+    println("Hasil kalkulasi run: $result")
 }

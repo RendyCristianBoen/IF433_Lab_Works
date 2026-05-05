@@ -1,13 +1,16 @@
 package oop_130679_RendyCristianBoen.week11
 
-fun String.toTitleCase(): String {
-    return this.split(" ").joinToString(" ") { it.lowercase().replaceFirstChar { c -> c.uppercase() } }
+// Extension function dengan receiver 'this'
+fun String.addGreeting(): String {
+    return "Hello, $this"
 }
 
-fun String.reverseWords(): String {
-    return this.split(" ").reversed().joinToString(" ")
+// Extension function dengan parameter
+fun String.repeatTimes(n: Int): String {
+    return this.repeat(n)
 }
 
-fun String?.safeLength(): Int {
-    return this?.length ?: 0
+// 'this' bisa bernilai null, jadi harus ditangani
+fun String?.isNullOrEmptyCustom(): Boolean {
+    return this == null || this.isEmpty()
 }

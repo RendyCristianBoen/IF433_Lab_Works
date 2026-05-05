@@ -1,10 +1,12 @@
 package oop_130679_RendyCristianBoen.week11
 
 fun main() {
-    val text = "hello world kotlin"
-    println(text.toTitleCase())
-    println(text.reverseWords())
+    println("=== TEST EXTENSION FUNCTIONS ===")
+    println("Alex".addGreeting())
+    println("Hi".repeatTimes(3))
 
-    val nullableText: String? = null
-    println(nullableText.safeLength())
+    val text: String? = null
+    println("Apakah null/empty? ${text.isNullOrEmptyCustom()}")
 }
+
+
